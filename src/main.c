@@ -1,8 +1,8 @@
 #include <gtk/gtk.h>
 #include <libnotify/notification.h>
 #include <libnotify/notify.h>
-#include <pulse/error.h>
-#include <pulse/simple.h>
+// #include <pulse/error.h>
+// #include <pulse/simple.h>
 
 #include <fcntl.h>
 #include <stdio.h>

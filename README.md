@@ -4,10 +4,28 @@ Eye health. Doc told me the 20-20-20 rule for eyes during screen usage.
 
 So I wrote a program that helps me do it. Notifies me when I need to take a break.
 
+## Building from Source
+
+Dependencies: `libnotify` and `gtk3`.
+
+```sh
+git clone https://github.com/resyfer/t20.git
+cd t20
+mkdir build
+cd build
+cmake -DDEBUG=1 ..
+make
+```
+
+(_Optional_) Install instructions after this:
+```
+sudo make install
+```
+
 ## Tested Platforms
 
 OS:
-  - Arch x86_64
+  - Arch Linux x86_64
 
 Desktop Environments:
   - KDE

@@ -22,11 +22,7 @@ include_directories(${LIBNOTIFY_INCLUDE_DIRS})
 pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
 include_directories(${GTK3_INCLUDE_DIRS})
 
-pkg_check_modules(PULSE REQUIRED libpulse)
-include_directories(${PULSE_INCLUDE_DIRS})
-
 add_executable(t20 ${SOURCES})
 install(TARGETS t20 DESTINATION bin)
 target_link_libraries(t20 PRIVATE ${LIBNOTIFY_LIBRARIES})
 target_link_libraries(t20 PRIVATE ${GTK3_LIBRARIES})
-target_link_libraries(t20 PRIVATE ${PULSE_LIBRARIES} pulse-simple)
