@@ -8,6 +8,19 @@ So I wrote a program that helps me do it. Notifies me when I need to take a brea
 
 Dependencies: `libnotify` and `gtk3`.
 
+Dev Build:
+
+```sh
+git clone https://github.com/resyfer/t20.git
+cd t20
+mkdir build
+cd build
+cmake ..
+make
+```
+
+Prod Build:
+
 ```sh
 git clone https://github.com/resyfer/t20.git
 cd t20
@@ -21,6 +34,8 @@ make
 ```
 sudo make install
 ```
+
+**NOTE**: Dev build has very small time intervals, and thus does not correspond to the 20-20-20 rule.
 
 ## Tested Platforms
 
